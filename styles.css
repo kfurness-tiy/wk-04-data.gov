@@ -6,12 +6,16 @@ body {
   background-color: #efefef;
 }
 
+.navbar {
+  margin-bottom: 0;
+}
+
 .jumbotron {
-  height: 638px;
+  height: 550px;
 }
 
 .whitehouse {
-  background-image: url(./Images/whitehouse.jpg);
+  background-image: url(./Images/newwhitehouse.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -26,14 +30,28 @@ body {
 .jumbotron p {
   text-align: center;
   font-size: 2em;
+  font-weight: bold;
+}
+
+#random {
+  width: 600px;
+}
+
+h3 {
+  padding-bottom: 20px;
+}
+
+.randomSalary button {
+  background-color: #7b858e;
+  border-color: #4a4c4e;
 }
 
 
 .position {
-  width: 500px;
+  width: 550px;
 }
 
 .myTable {
   margin: 0 auto;
-  width: 580px;
+  width: 600px;
 }

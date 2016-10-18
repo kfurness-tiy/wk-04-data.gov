@@ -9,6 +9,18 @@
     <script src="jquery-3.1.1.min.js"></script>
   </head>
   <body>
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">White House Salaries</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#random">Random Data</a></li>
+      <li><a href="#tableData">Data Table</a></li>
+    </ul>
+  </div>
+</nav>
+
     <div class="containter">
     <div class="jumbotron whitehouse">
       <div class="text-center">
@@ -18,33 +30,44 @@
     </div>
     </div>  <!-- end container div -->
 
-    <div class="myTable">
+    <div class="randomSalary container text-center" id='random'>
+        <div class="row">
+            <div class="col-sm-12">
+              <div class='well'>
+                <h3>Find a random salary</h3>
+        <div class="row">
+             <div class="col-sm-3">
+               <div class="well">
+                <button type="button" class="btn btn-primary btn-lg" id="salButton">Find</button>
+               </div>
+             </div>
+             <div class="col-sm-9">
+               <div class="well">
+                 <p class="randomSalInfo">Push the find button to see a randomly chosen position and salary.</p>
+               </div>
+             </div>
+           </div>
+         </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="myTable" id="tableData">
       <table class='table table-striped'>
         <thead>
           <th>Position</th>
           <th>Salary</th>
         </thead>
         <tbody class='data'>
-
         </tbody>
       </table>
     </div>
 
-    <div class="data">
-      <div class="row">
-         <div class="col-sm-6">
-           <p class='job'></p>
-         </div>
-         <div class='col-sm-6'>
-          <p class='salary'></p>
-         </div>
-      </div>
-      <div class='row'>
-        <button
-      </div>
-    </div>
 
-    <p class='test'></p>
+<footer class="container-fluid text-center">
+  <p>White House image attributed to <a href="https://www.flickr.com/photos/ash_crow/9427806721/in/photolist-fn6YtK-7hfNz2-f3CJ1p-7hfMvB-7hfMGx-7hjKCf-7hjKxW-7hjKow-7hjKth-6QWdCE-7hjKLq-7hfN6M-bPnryH-bPnr76-bAsRSy-bAsJRy-bPnBfv-bPnpJH-bPnp98-bAt4XN-bPnwp8-bAsSmS-bAsVm5-bAsQdy-bPnFtp-bPns4H-m94CL5-bAsRms-bPnGrk-fAtJW4-bAt4Mm-bPnufH-4LGy9q-bPnqpR-bAsYKj-j6CK2-bPnCQ8-bPnJiF-bPnHSD-FMfmV-FMbu1-FMg2X-aAZeVB-8Kuivn-7z1vR7-ek338b-gb1C-6mm8Ce-jcgJB-MnP47/" target='_blank'>ash_crow</a></p>
+  <p>Image changes: Opacity</p>
+</footer>
 
   </body>
   <script src="salary-api.js"></script>

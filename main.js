@@ -1,11 +1,13 @@
 'use strict';
 
- //http://www.w3schools.com/jsref/met_table_insertrow.asp
-
-// TODO Change to map
 function createTable (data) {
-  for (var d = 0; d < data.length; d++) {
-      var msg = '<tr><td class="position">' + data[d].position_title + '</td>' + '<td>' + data[d].salary + '</td></tr>\n';
+  data.map( function (data) {
+      var msg = '<tr><td class="position">' + data.position_title + '</td>' + '<td>' + data.salary + '</td></tr>\n';
       document.querySelector('.data').innerHTML += msg;
-  }
+  });
+}
+
+function buttonSalary (data){
+  var randomInfo = 'Position: ' + data[0].position_title + "\nSalary: " + data[0].salary;
+  document.querySelector('.randomSalInfo').innerHTML = randomInfo;
 }
