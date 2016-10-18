@@ -22,8 +22,11 @@ var loaded = dataLoad();
 
 loaded.then(function(result) {
   console.log(ourData);
+  printData(ourData);
   }, function(err) {
     console.log(err + ': Try again');
 });
 
+function printData (ourData) {
 console.log(ourData[0].salary);
+  }
