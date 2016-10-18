@@ -3,15 +3,15 @@
 }
 
 .jumbotron {
-  height: 638px;
+  height: 300px;
 }
 
-.whitehouse {
+/*.whitehouse {
   background-image: url(./Images/whitehouse.jpg);
   background-repeat: no-repeat;
   background-position: center;
   opacity: 0.5;
-}
+}*/
 
 .jumbotron h1 {
   position: relative;

@@ -29,7 +29,9 @@ loaded.then(function(result) {
 
 function printData (ourData) {
   var data = ourData;
+  console.log(data[0].salary);
   createTable(data);
+  // randomData(data);
   document.querySelector('.test').innerHTML = ourData[1].salary;
   console.log(ourData[0].salary);
   }
@@ -39,33 +41,39 @@ function printData (ourData) {
 
 
 function createTable (data) {
-  var body = document.getElementsByTagName('body')[0];
-
-  var tbl = document.createElement('table');
-  var tblBody = document.createElement('tbody');
-  tbl.style.width = '800px';
-  tbl.style.border = '1px solid black';
-
-  for (let i = 0; i < 2; i++) {
-    var row = document.createElement('tr');
-
-  for (var j = 0; j < 10; j++) {
-    var cell = document.createElement('td');
-    var cellText = document.createTextNode(data[j].salary);
-    cell.appendChild(cellText);
-    row.appendChild(cell);
-  }
-
-    tblBody.appendChild(row);
-  }
-
-  tbl.appendChild(tblBody);
-  body.appendChild(tbl);
-  tbl.setAttribute('boder', '2');
+  var msg = '<tr><td>' + data[0].position_title + '</td>' + '<td>' + data[0].salary + '</td></tr>\n';
+  console.log(msg);
+  document.selectQuery('body').innerHTML += msg;
 }
 
-function getData(data) {
-  for (var d = 0; d < 10; d++ ) {
-    return data[d].salary;
-  }
-}
+// function createTable (data) {
+//   var body = document.getElementsByTagName('body')[0];
+//
+//   var tbl = document.createElement('table');
+//   var tblBody = document.createElement('tbody');
+//   tbl.style.width = '800px';
+//   tbl.style.border = '1px solid black';
+//
+//   for (let i = 0; i < 2; i++) {
+//     var row = document.createElement('tr');
+//
+//   for (var j = 0; j < 10; j++) {
+//     var cell = document.createElement('td');
+//     var cellText = document.createTextNode(data[j].salary);
+//     cell.appendChild(cellText);
+//     row.appendChild(cell);
+//   }
+//
+//     tblBody.appendChild(row);
+//   }
+//
+//   tbl.appendChild(tblBody);
+//   body.appendChild(tbl);
+//   tbl.setAttribute('boder', '2');
+// }
+//
+// function getData(data) {
+//   for (var d = 0; d < 10; d++ ) {
+//     return data[d].salary;
+//   }
+// }
