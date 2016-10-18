@@ -28,5 +28,12 @@ loaded.then(function(result) {
 });
 
 function printData (ourData) {
-console.log(ourData[0].salary);
+  var data = ourData;
+  function createTable(data);
+  document.querySelector('.test').innerHTML = ourData[0].salary;
+  console.log(ourData[0].salary);
   }
+
+function createTable (data) {
+  
+}
