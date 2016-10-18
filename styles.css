@@ -17,7 +17,7 @@
   position: relative;
   text-align: center;
   font-size: 3em;
-  top: 100px;
+  top: 50px;
   opacity: 2;
 }
 
@@ -25,5 +25,10 @@
   position: relative;
   text-align: center;
   font-size: 2em;
-  top: 100px;
+  top: 50px;
+}
+
+
+.position {
+  width: 450px;
 }
