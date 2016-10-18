@@ -2,33 +2,38 @@
   font-family: Helvetica;
 }
 
-.jumbotron {
-  height: 300px;
+body {
+  background-color: #efefef;
 }
 
-/*.whitehouse {
+.jumbotron {
+  height: 638px;
+}
+
+.whitehouse {
   background-image: url(./Images/whitehouse.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  opacity: 0.5;
-}*/
+}
 
 .jumbotron h1 {
-  position: relative;
   text-align: center;
-  font-size: 3em;
-  top: 50px;
-  opacity: 2;
+  font-size: 3.5em;
+  font-weight: bolder;
+  opacity: none;
 }
 
 .jumbotron p {
-  position: relative;
   text-align: center;
   font-size: 2em;
-  top: 50px;
 }
 
 
 .position {
-  width: 450px;
+  width: 500px;
+}
+
+.myTable {
+  margin: 0 auto;
+  width: 580px;
 }
