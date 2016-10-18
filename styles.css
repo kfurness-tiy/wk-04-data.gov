@@ -33,20 +33,6 @@ body {
   font-weight: bold;
 }
 
-#random {
-  width: 600px;
-}
-
-h3 {
-  padding-bottom: 20px;
-}
-
-.randomSalary button {
-  background-color: #7b858e;
-  border-color: #4a4c4e;
-}
-
-
 .position {
   width: 550px;
 }
