@@ -1,0 +1,29 @@
+* {
+  font-family: Helvetica;
+}
+
+.jumbotron {
+  height: 638px;
+}
+
+.whitehouse {
+  background-image: url(./Images/whitehouse.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+}
+
+.jumbotron h1 {
+  position: relative;
+  text-align: center;
+  font-size: 3em;
+  top: 100px;
+  opacity: 2;
+}
+
+.jumbotron p {
+  position: relative;
+  text-align: center;
+  font-size: 2em;
+  top: 100px;
+}
