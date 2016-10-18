@@ -32,8 +32,6 @@ function printData (ourData) {
   console.log(data[0].salary);
   createTable(data);
   // randomData(data);
-  document.querySelector('.test').innerHTML = ourData[1].salary;
-  console.log(ourData[0].salary);
   }
 
 
@@ -41,9 +39,10 @@ function printData (ourData) {
 
 
 function createTable (data) {
-  var msg = '<tr><td>' + data[0].position_title + '</td>' + '<td>' + data[0].salary + '</td></tr>\n';
-  console.log(msg);
-  document.selectQuery('body').innerHTML += msg;
+  for (var d = 0; d < data.length; d++) {
+      var msg = '<tr><td>' + data[d].position_title + '</td>' + '<td>' + data[d].salary + '</td></tr>\n';
+      document.querySelector('.data').innerHTML += msg;
+  }
 }
 
 // function createTable (data) {

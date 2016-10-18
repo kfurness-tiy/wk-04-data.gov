@@ -18,7 +18,7 @@ window.onload = function salaries () {
     }
   }).done(function(data) {
      ourData = data;
-     console.log(ourData);
+     return data;
   })
 
 };
