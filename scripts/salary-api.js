@@ -1,5 +1,4 @@
 'use strict';
-var ourData = {};
 
 window.onload = function salaries () {
 
@@ -19,7 +18,7 @@ window.onload = function salaries () {
     var data = ourData;
     console.log(data);
     createTable(data);
-    document.getElementById("salButton").onclick = buttonSalary;
+    globalData.setData(data);
   }, function(err) {
     console.log(err + ': Try again');
   });

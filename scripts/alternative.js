@@ -1,3 +1,5 @@
+'use strict';
+
 function dataLoad () {
 //   return new Promise( function(resolve, reject) {
 //     setTimeout( function() {
