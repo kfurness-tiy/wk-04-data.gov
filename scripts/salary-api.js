@@ -8,7 +8,7 @@ window.onload = function salaries () {
     dataType: "json",
     url: url,
     data: {
-      "$limit" : 25
+      "$limit" : 50
     }
   })
 
@@ -16,7 +16,6 @@ window.onload = function salaries () {
 
   realPromise.then(function(ourData) {
     var data = ourData;
-    console.log(data);
     createTable(data);
     globalData.setData(data);
   }, function(err) {

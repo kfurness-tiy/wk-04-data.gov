@@ -7,26 +7,30 @@ function createTable (data) {
   });
 }
 
+
+
 var globalData = (function () {
   var data = {};
 
-  function setData(apiData) {
+  let setData = function (apiData) {
     data = apiData;
+    console.log(data);
     // clicked(data);
     return data;
-  }
+  };
 
-  var clicked = function (data) {
-      console.log(data);
-      console.log(data[0].salary);
-      var randomInfo = 'Position: ' + data[0].position_title + "\nSalary: " + data[0].salary;
+  console.log(data);
+
+  let clicked = function () {
+      console.log(data[1].salary);
+      var randomInfo = 'Position: ' + data[0].position_title + "<br> Salary: " + data[0].salary;
       console.log(randomInfo); //not logging this!
       document.querySelector('.randomSalInfo').innerHTML = randomInfo;
-  }
+  };
 
   return {
     setData: setData,
-    // clicked: clicked
+    clicked: clicked
   };
 })();
 
