@@ -15,7 +15,6 @@ var globalData = (function () {
   let setData = function (apiData) {
     data = apiData;
     console.log(data);
-    // clicked(data);
     return data;
   };
 

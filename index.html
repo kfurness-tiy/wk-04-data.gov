@@ -15,6 +15,7 @@
       <a class="navbar-brand" href="#">White House Salaries</a>
     </div>
     <ul class="nav navbar-nav">
+      <li><a href="#random">Random Data Generator</a></li>
       <li><a href="#tableData">Data Table</a></li>
     </ul>
   </div>
@@ -29,21 +30,21 @@
     </div>
     </div>  <!-- end container div -->
 
-
+<!-- Random Salary Generator ----------------------->
     <div class="randomSalary container text-center" id="random">
         <div class="row">
             <div class="col-sm-12">
               <div class="well">
-                <h3>Find random data</h3>
-                <p>Click the button to show a random position and salary</p>
+                <h2>Find random data</h2>
+                <p>Click the button to show a different random position and salary</p>
         <div class="row">
-             <div class="col-sm-3">
-               <div class="well">
-                <button type="button" class="btn btn-primary btn-lg" id="salButton">Find</button>
-               </div>
+             <div class="buttonMain col-sm-12">
+
+                <button type="button" class="myButton btn btn-primary btn-lg" id="salButton">Find</button>
+
              </div>
-             <div class="col-sm-9">
-               <div class="well">
+             <div class="col-sm-12">
+               <div class="randomSal well">
                  <p class="randomSalInfo">Position: ADVISOR TO THE CHIEF OF STAFF<br>Salary: 156552</p>
                </div>
              </div>
@@ -53,16 +54,19 @@
       </div>
     </div>
 
-
-    <div class="myTable" id="tableData">
-      <table class="table table-striped">
-        <thead>
-          <th>Position</th>
-          <th>Salary</th>
-        </thead>
-        <tbody class="data">
-        </tbody>
-      </table>
+<!--Data Table  ------------------------------------->
+    <div class="dataTab">
+      <h2 id="tableData">Data Table of Salaries</h2>
+      <div class="myTable">
+        <table class="table table-striped">
+          <thead>
+            <th>Position</th>
+            <th>Salary</th>
+          </thead>
+          <tbody class="data">
+          </tbody>
+        </table>
+      </div>
     </div>
 
 
