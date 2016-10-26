@@ -19,18 +19,19 @@ var globalData = (function () {
     return data;
   };
 
-  console.log(data);
-
   let clicked = function () {
-      console.log(data[1].salary);
-      var randomInfo = 'Position: ' + data[0].position_title + "<br> Salary: " + data[0].salary;
+      var randomNum = Math.floor(Math.random() * 50);
+      console.log(randomNum);
+      var randomInfo = 'Position: ' + data[randomNum].position_title + "<br> Salary: " + data[randomNum].salary;
       console.log(randomInfo); //not logging this!
       document.querySelector('.randomSalInfo').innerHTML = randomInfo;
   };
 
+
+
   return {
     setData: setData,
-    clicked: clicked
+    clicked: clicked,
   };
 })();
 
